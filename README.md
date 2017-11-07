@@ -1,2 +1,3 @@
 # uppgifter
-Uppgifter Programmering 1
+Här kommer jag posta lösningarna till uppgifterna i programmering 1
+Licenserat med GNU Public License

@@ -13,7 +13,7 @@ namespace uppgift2
 
 
             
-            
+            try
             {
                 Console.WriteLine("Skriv två tal\nTal ett: ");
                 string n1 = Console.ReadLine();

@@ -11,20 +11,9 @@ namespace uppgift2
         static void Main(string[] args)
         {
 
-           /* Console.WriteLine("Skriv två nummer");
-            Console.WriteLine("Första nummer: ");
-            string x1 = Console.ReadLine();
-            Console.WriteLine("Andra nummer: ");
-            string x2 = Console.ReadLine();
 
-            int z1 = Convert.ToInt32(x1);
-            int z2 = Convert.ToInt32(x2);
-            Console.WriteLine("Produkt: " + z1 * z2);
-            Console.WriteLine("Summa: " + z1 + z2);
-            Console.ReadLine();*/
-
-            #region v2
-            try
+            
+            
             {
                 Console.WriteLine("Skriv två tal\nTal ett: ");
                 string n1 = Console.ReadLine();
@@ -62,7 +51,7 @@ namespace uppgift2
                 Console.WriteLine("Nu har du gjort något fel. Vänligen starta om programmet och gör rätt.");
                 Console.ReadLine();
             }
-            #endregion
+            
         }
     }
 }

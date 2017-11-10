@@ -30,7 +30,7 @@ namespace uppgift3
                 Console.Clear();
                 //liten paus för att det ska bli bekvämare att använda programmet
                 Thread.Sleep(500);
-                Console.WriteLine("Med hjälp av värdena du matade in (rea: " + rea + "% och originalpris: " + pris + ") så är det nya priset " + discounted);
+                Console.WriteLine("Med hjälp av värdena du matade in (rea: " + rea + "% och originalpris: " + pris + ") så är det nya priset " + (pris-discounted));
             }
             catch
             {

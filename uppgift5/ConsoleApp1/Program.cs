@@ -14,7 +14,6 @@ namespace ConsoleApp1
             float year = float.Parse(Console.ReadLine());
             //skottår är delbara med 4
             //för att bestämma om ett tal är delbart med ett annat kan man använda "%" modulus operatorn
-            Console.WriteLine(5 % 20);
             //den matematiska beräkningen x modulus n = 0 betyder att x är jämnt delbart med n
             if (year % 4 == 0) //om år är jämnt delbart med 4 är det ett skottår
             {

@@ -1,30 +1,49 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Skottår
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Skriv in ett år: ");
-            float year = float.Parse(Console.ReadLine());
-            //skottår är delbara med 4
-            //för att bestämma om ett tal är delbart med ett annat kan man använda "%" modulus operatorn
-            //den matematiska beräkningen x modulus n = 0 betyder att x är jämnt delbart med n
-            if (year % 4 == 0) //om år är jämnt delbart med 4 är det ett skottår
+            try
             {
-                Console.WriteLine("Ditt år är ett skottår");
+                Console.WriteLine("Skriv in ett år: ");
+                float year = float.Parse(Console.ReadLine());
+
+                if (year % 100 == 0)
+                {
+                    if (year % 400 == 0)
+                    {
+                        Console.WriteLine("Ditt år är ett skottår");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ditt år är inte ett skottår");
+                    }
+
+                }
+
+                else if (year % 4 == 0 && year % 100 != 0)
+                {
+                    Console.WriteLine("Ditt år är ett skottår");
+                }
+                else
+                {
+                    Console.WriteLine("Ditt år är inte ett skottår");
+                }
+
+                Console.ReadLine();
             }
-            else
+            catch
             {
-                Console.WriteLine("Ditt år är inte ett skottår");
+                Console.WriteLine("Någonting gick fel. Dubbelkolla så att du skrev in årtalet rätt. \nProgrammet stängs nu...");
+                System.Threading.Thread.Sleep(3000);
             }
-            
-            Console.ReadLine();
         }
     }
 }

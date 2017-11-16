@@ -12,7 +12,6 @@ namespace vader
         {
             bool regn;
             bool sol;
-            bool moln;
             Console.WriteLine("Beskriv vädret!\nRegnar det? (y/n) ");
             if (Console.ReadLine() == "y")
             {
